@@ -1,0 +1,209 @@
+# ==========================================
+# NeuroScan AI - Root Git Ignore
+# ==========================================
+
+
+# ==========================================
+# ENVIRONMENT / SECRETS
+# ==========================================
+
+.env
+.env.*
+!.env.example
+
+backend/.env
+backend/.env.*
+
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+ml-service/.env
+ml-service/.env.*
+!ml-service/.env.example
+
+
+# ==========================================
+# NODE.JS
+# ==========================================
+
+node_modules/
+**/node_modules/
+
+.npm/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# ==========================================
+# PYTHON
+# ==========================================
+
+venv/
+.venv/
+env/
+
+**/venv/
+**/.venv/
+**/env/
+
+__pycache__/
+**/__pycache__/
+
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+
+
+# ==========================================
+# AI / ML MODEL FILES
+# ==========================================
+
+# Large trained model files
+ml-service/model/*.keras
+ml-service/model/*.h5
+ml-service/model/*.hdf5
+ml-service/model/*.onnx
+ml-service/model/*.pt
+ml-service/model/*.pth
+
+# TensorFlow checkpoint files
+*.ckpt
+*.index
+*.data-*
+
+
+# ==========================================
+# USER UPLOADED MRI FILES
+# ==========================================
+
+uploads/
+**/uploads/
+
+backend/uploads/
+ml-service/uploads/
+
+
+# ==========================================
+# TEST MEDICAL IMAGES
+# ==========================================
+
+backend/test-images/
+**/test-images/
+
+
+# ==========================================
+# GENERATED REPORTS
+# ==========================================
+
+reports/
+**/reports/
+
+backend/reports/
+
+
+# ==========================================
+# GENERATED AI OUTPUTS / GRAD-CAM
+# ==========================================
+
+outputs/
+**/outputs/
+
+backend/public/outputs/
+ml-service/outputs/
+
+
+# ==========================================
+# LOGS
+# ==========================================
+
+*.log
+
+logs/
+**/logs/
+
+.nyc_output/
+
+
+# ==========================================
+# TEMPORARY FILES
+# ==========================================
+
+*.tmp
+*.temp
+*.cache
+
+temp/
+tmp/
+
+*.bak
+*.old
+*.orig
+
+
+# ==========================================
+# BUILD FILES
+# ==========================================
+
+dist/
+**/dist/
+
+build/
+**/build/
+
+coverage/
+**/coverage/
+
+
+# ==========================================
+# IDE / EDITOR
+# ==========================================
+
+.vscode/
+.idea/
+
+*.swp
+*.swo
+
+.history/
+
+
+# ==========================================
+# OPERATING SYSTEM
+# ==========================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# ==========================================
+# FRONTEND / VITE
+# ==========================================
+
+frontend/dist/
+frontend/.vite/
+
+
+# ==========================================
+# PYTHON / ML TEMPORARY FILES
+# ==========================================
+
+*.pkl
+*.joblib
+
+# Keep model configuration and class mapping,
+# but ignore large trained model binaries.
+
+
+# ==========================================
+# MISCELLANEOUS
+# ==========================================
+
+*.pid
+*.seed

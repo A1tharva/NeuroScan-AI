@@ -1,0 +1,17 @@
+{
+    "model": "EfficientNetB4",
+    "framework": "PyTorch",
+    "input_size": [
+        224,
+        224
+    ],
+    "num_classes": 4,
+    "classes": [
+        "glioma",
+        "meningioma",
+        "notumor",
+        "pituitary"
+    ],
+    "gradcam_layer": "model.features[-1]",
+    "model_file": "brain_tumor_efficientnet_b4_best.pth"
+}
